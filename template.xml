@@ -2,15 +2,13 @@
 <Template isFullResponsive="true">
     <Name>NOVA-Child</Name>
     <Author>JTL-Software-GmbH</Author>
-    <URL>http://jtl-software.de</URL>
+    <URL>https://jtl-software.de</URL>
     <Parent>NOVA</Parent>
     <Preview>preview.png</Preview>
-<!--    <Version>1.0.0</Version>-->
-    <ShopVersion>5.2.0</ShopVersion>
-    <MaxShopVersion>5.1.0</MaxShopVersion>
+    <Version>1.0.0</Version>
     <MinShopVersion>5.0.0</MinShopVersion>
+    <MaxShopVersion>5.1.0</MaxShopVersion>
     <Description>Dieses Template dient als Vorlage für eigenes Child-Template des NOVA.</Description>
-    <ExsID>jtlnc123456789</ExsID>
     <Settings>
         <Section Name="Theme" Key="theme">
             <Setting Description="Theme" Key="theme_default" Type="select" Value="my-nova" override="true">
