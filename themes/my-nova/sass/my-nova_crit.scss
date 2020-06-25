@@ -1,0 +1,20 @@
+// Lädt Critical CSS aus dem Nova
+
+// Lädt Core-Funktionen
+@import '../../../../NOVA/themes/base/sass/functions';
+
+// Lädt "my-nova"-Variablen. Hier können Variablen aus Bootstrap und dem clear-Theme überschrieben werden.
+@import "variables";
+
+// Lädt kritische Style Angaben
+@import "../../../../NOVA/themes/base/bootstrap/scss/functions";
+@import "../../../../NOVA/themes/base/bootstrap/scss/variables";
+@import "../../../../NOVA/themes/base/bootstrap/scss/mixins";
+@import "../../../../NOVA/themes/base/bootstrap/scss/root";
+@import "../../../../NOVA/themes/base/bootstrap/scss/reboot";
+//@import "../../base/bootstrap/scss/type";
+@import "../../../../NOVA/themes/base/bootstrap/scss/images";
+@import "../../../../NOVA/themes/base/bootstrap/scss/code";
+@import "../../../../NOVA/themes/base/bootstrap/scss/grid";
+@import "../../../../NOVA/themes/base/bootstrap/scss/nav";
+@import "../../../../NOVA/themes/base/bootstrap/scss/navbar";
