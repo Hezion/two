@@ -6,6 +6,12 @@ vorhanden sein müssen.
 - Alle notwendigen Style- und SASS-Dateien sind angelegt, beinhalten aber ausser den notwendigen Vererbungs-Includes 
 keine eigenen Änderungen.
 
+## Installation
+**ACHTUNG!!!** Die NOVA-Child-Vorlage ist so angelegt, dass sie in das Verzeichnis *NOVAchild* des Template-Ordners
+installiert werden muss, um korrekt zu funktionieren! Ggfs. muss der automatisch erstellte Ordner beim Entpacken aus dem Git-Download entsprechend
+umbenannt werden.
+Eine Änderung des Verzeichnisnamens ist nur möglich, wenn dazu auch die Namespace-Zeile (Zeile 3) in der Datei [Bootstrap.php](Bootstrap.php)
+entsprechend zu **namespace Template\neuerVerzeichnisname;** geändert wird.
 
 ## Parent Theme ändern
 
