@@ -4,7 +4,7 @@ namespace Template\NOVAChild;
 
 /**
  * Class Bootstrap
- * @package Template\NOVAchild
+ * @package Template\NOVAChild
  */
 class Bootstrap extends \Template\NOVA\Bootstrap
 {
