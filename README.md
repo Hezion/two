@@ -7,11 +7,15 @@ vorhanden sein müssen.
 keine eigenen Änderungen.
 
 ## Installation
-**ACHTUNG!!!** Die NOVA-Child-Vorlage ist so angelegt, dass sie in das Verzeichnis *NOVAchild* des Template-Ordners
-installiert werden muss, um korrekt zu funktionieren! Ggfs. muss der automatisch erstellte Ordner beim Entpacken aus dem Git-Download entsprechend
-umbenannt werden.
-Eine Änderung des Verzeichnisnamens ist nur möglich, wenn dazu auch die Namespace-Zeile (Zeile 3) in der Datei [Bootstrap.php](Bootstrap.php)
-entsprechend zu **namespace Template\neuerVerzeichnisname;** geändert wird.
+**ACHTUNG!!!**  
+Bitte nutzen Sie zum Download den Link (ensprechend der gewünschten Version) : https://build.jtl-shop.de/#template  
+  
+Bei einem direkten Download über *gitlab.com* muss der automatisch erstellte Ordner beim Entpacken 
+des `.zip`-Files umbenannt werden.  
+Die NOVA-Child-Vorlage ist so angelegt, dass sie in das Verzeichnis `NOVAChild/` des Template-Ordners installiert
+werden muss, um korrekt zu funktionieren! Eine Änderung des Verzeichnisnamens ist nur möglich, wenn dazu auch die 
+Namespace-Zeile (Zeile 3) in der Datei [Bootstrap.php](Bootstrap.php) entsprechend 
+zu `namespace Template\neuerVerzeichnisname;` geändert wird.
 
 ## Parent Theme ändern
 
