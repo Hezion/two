@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Template\NOVAchild;
+namespace Template\NOVAChild;
 
 /**
  * Class Bootstrap
