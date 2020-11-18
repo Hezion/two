@@ -57,7 +57,7 @@ stages:
 
         mv ${ZIP_PATH} ${NEW_ZIP_PATH}; \
         zip -r -q ${ARCHIVE_PATH} ${NEW_ZIP_PATH} -x \*.git* \*.sh \*.idea* \*docs/* \*patch-dir-* \*tests/* \*build/* \*node_modules/* \*.asset_cs \*.php_cs \*.travis.yml \*phpunit.xml; \
-        echo \"archive name: ${FILENAME}\"; \
+        echo \"] archive name: ${FILENAME}\"; \
 
         if [[ \"${TAG}\" =~ \"${VCS_REG_TAGS}\" ]]
             then cp -r ${ARCHIVE_PATH} ${ARCHIVE_DIR}/latest/${ZIP_FILE_NAME_PREFIX}.zip; \
