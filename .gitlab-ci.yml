@@ -57,7 +57,7 @@ stages:
 
         mv ${ZIP_PATH} ${NEW_ZIP_PATH}; \
         zip -r -q ${ARCHIVE_PATH} ${NEW_ZIP_PATH} -x \*.git* \*.sh \*.idea* \*docs/* \*patch-dir-* \*tests/* \*build/* \*node_modules/* \*.asset_cs \*.php_cs \*.travis.yml \*phpunit.xml; \
-        echo \"${FILENAME}\"; \
+        echo \"archive name: ${FILENAME}\"; \
 
         if [[ \"${TAG}\" =~ \"${VCS_REG_TAGS}\" ]]
             then cp -r ${ARCHIVE_PATH} ${ARCHIVE_DIR}/latest/${ZIP_FILE_NAME_PREFIX}.zip; \
@@ -69,7 +69,7 @@ stages:
       sh -c "echo '$DEPLOY_SCRIPT' > build/scripts/deploy.sh && chmod 775 build/scripts/deploy.sh && bash build/scripts/deploy.sh"
 
     docker cp $CI_CONTAINER_NAME:/archive/. $CICDG_RUNNER_BUILD_PATH/$ZIP_FILE_TARGET_FOLDER
-    chmod g+w $CICDG_RUNNER_BUILD_PATH/$ZIP_FILE_TARGET_FOLDER
+    chmod g+w $CICDG_RUNNER_BUILD_PATH/$ZIP_FILE_TARGET_FOLDER/$FILENAME
     docker stop "$CI_CONTAINER_NAME"
     docker rm -fv "$CI_CONTAINER_NAME" >/dev/null
   }
