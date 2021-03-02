@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Template\two;
+namespace Template\Two;
 
 /**
  * Class Bootstrap
